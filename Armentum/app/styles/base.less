@@ -1,0 +1,341 @@
+*{
+    ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 6px #666;
+        }
+
+    html {
+      box-sizing: border-box;
+      height : 100%;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    #iframe{
+        top : 0px !important;
+    }
+    div{
+        height : 100%;
+    }
+
+    body {
+      background: #FFFFFF;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px; /* Base Font Size */
+      margin: 0;
+      overflow: auto;
+      height : 100%;
+    }
+    .headerComponent{
+        margin: auto;
+        height: 120px;
+        box-sizing: border-box;
+        .topHeader{
+            height: 20px;
+            background: #004466;
+        }
+        .hyperLinkHeader{
+            height: 40px;
+            .hyperLinkContent{
+                width: 80%;
+                margin: auto;
+                text-align: right;    
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;    
+                .claimReprotDiv{
+                    font-size: 12px;
+                    font-weight: 600;
+                    background: #e6ac00;
+                    height: 25px;
+                    width: 150px;
+                    text-align: center;
+                    border: 1px solid #e6ac00;
+                }
+                .loginButton{
+                    font-size: 10px;
+                    background: #004466;
+                    height: 25px;
+                    width: 70px;
+                    text-align: center;
+                    border: 1px solid #004466;
+                    color: white;
+                    margin-left: 10px;
+                }
+                >ul{
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-right: 30px;
+                     .selected{
+                            color: #ff3300;
+                        }
+                    >li{
+                        display: inline-flex;
+                        margin-left: 20px;
+                        height: 25px;
+                        line-height: 25px;
+                        cursor: pointer;
+                        >span{
+                            vertical-align: middle;
+                        }
+                       
+                    }
+                }
+            }
+        }
+        .tabHeader{
+            height: 60px;
+            background: cornflowerblue;
+            .tabHeaderContent{
+                width: 80%;
+                margin: auto;
+                text-align: right;    
+                display: flex;
+                justify-content: flex-end;
+                align-items: center; 
+                >ul{
+                    padding: 0;
+                    list-style: none;
+                    font-size: 12px;
+                    width: 100%;
+                    margin: 0;
+                    color: white;
+                    font-weight: bold;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    .selected{
+                        background: #e6ac00;
+                        border: 1px solid #e6ac00;
+                    }
+                    >li{
+                        height: 40px;
+                        line-height: 40px;
+                        border: 1px solid rgba(255,255,255,.5);
+                        border-right: none;
+                        display: block;
+                        text-align: center;       
+                        cursor: pointer;
+                    }
+                    &:last-child{
+                        border-right: 1px solid rgba(255,255,255,.5);
+                    }
+                }
+            }
+        }
+    }
+    .contentSection{
+        width: 100%;
+        .contentSectionContent{
+            width: 80%;
+            margin: auto;
+            .conetentSectionHeader{
+                height: 40px;
+                display: flex;
+                align-items: center;
+                .pageLabel{
+                    color: #004466;
+                }
+                .subPageLabel{
+                    color: #ccc;
+                }
+                >span{
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+            .conetentSectionSection{
+                display: flex;
+                .leftContent{
+                    width: 77%;
+                    .informationDiv{
+                        padding: 10px 0;
+                        margin-right: 50px;
+                        .headerDiv{
+                            h2{
+                                font-size: 24px;
+                                font-weight: normal;
+                                margin: 0;
+                                margin-bottom: 10px;
+                            }
+                            >span{
+                                font-size: 12px;
+                                font-weight: 600;
+                                margin-right: 10px;
+                            }
+                            .labelClass{
+                                color: #666;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    .imageDiv{
+                        margin : 10px 0;
+                        img{
+                            width : 100%;
+                        }
+                    }
+                    .descriptionDiv{
+                        .descriptionSpan{
+                            font-size: 14px;
+                        }
+                        .readMore{
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 600;    
+                            margin-top: 5px;
+                            color: #046;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .rightContent{
+                    width: 23%;
+                    padding: 10px;
+                    .popularPost{
+                         h1{
+                            margin :0;   
+                            color: #004466;
+                        }
+                        .popularPostImage{
+                            margin : 10px 0;
+                            .popluarPostHeader{
+                                padding: 2px;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #004466;
+                            }
+                            .popluarPostContent{
+                                font-size: 14px;
+                                color: #666;
+                                padding: 2px;
+                            }
+                        }  
+                    }
+                    .tasks{
+                        margin: 5px 0;
+                        h1{
+                            color: #666;
+                            font-weight: 500;
+                            font-size: 20px;
+                            margin: 0;
+                        }
+                        .taksContent{
+                            margin: 5px 0;
+                            >span{
+                                padding: 5px 10px;
+                                display: inline-block;
+                                border: 1px solid #046;
+                                border-radius: 5px;
+                                color: #046;
+                                font-size: 14px;
+                                margin: 0 10px 5px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footerComponent{
+        border-top : 1px solid #666;
+        .footerContent{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            font-size: 12px;
+            .footerTopDiv{
+                border-bottom: 1px solid #666;
+                padding: 20px 0;
+                display: flex;
+                >div{
+                    display: inline-block;
+                }
+                .mapDiv{
+                    width:40%;
+                    text-align: left;
+                    padding-top: 40px;
+                    .followUS{
+                        margin-top: 10px;
+                        .imageCircle{
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid #ccc;
+                            border-radius: 30px;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .QuickLinks{
+                    width:30%;
+                    h3{
+                        width: 170px;
+                        text-align: left;
+                        margin: auto;
+                    }
+                    ul{
+                        list-style: none;
+                        text-align: left;
+                        padding: 0;
+                        width: 170px;
+                        font-size: 14px;
+                        margin: 20px auto;
+                        cursor: pointer;
+                    }
+                }
+                .downloadFreeBook{
+                    width:30%;
+                    .downloadBook{
+                        font-size: 12px;
+                        font-weight: 600;
+                        background: #e6ac00;
+                        height: 25px;
+                        width: 130px;
+                        margin-top: 20px;
+                        text-align: center;
+                        border: 1px solid #e6ac00;
+                        cursor: pointer;
+                    }
+                    .inputBox{
+                        width: 250px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #ccc;
+                        background: #d1e0e0;
+                        margin : auto;
+                        img{
+                            margin: 0 3px;
+                        }
+                        input{
+                            width: 230px;
+                            height: 30px;
+                            border: none;
+                            box-sizing: border-box;
+                        }
+                    }
+                    .borderBottomNone{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
